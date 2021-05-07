@@ -5,7 +5,8 @@ const Schema=mongoose.Schema
 const Card= new Schema({
     card_id:{
         type: String,
-        required: true
+        required: true,
+        unique:true
     },
     card_owner:{
         type:String,
