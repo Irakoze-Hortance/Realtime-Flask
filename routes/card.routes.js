@@ -10,7 +10,7 @@ router.get('/all',cardController.getCards)
 router.get('/all_cards', async function(req, res) {
     const data = await Card.find();
     // console.log("cards collection: ", data);
-    res.render('./../views/card.view',{cardDetails : data})
+    res.render('./../views/card',{cardDetails : data})
 });
 
 module.exports=router

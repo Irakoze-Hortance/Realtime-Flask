@@ -14,7 +14,6 @@ addCard=(req,res)=>{
     } = validateCard(req.body)
     if (error)
         return res.status(400).send(error.details[0].message)
-
     const card = new Card(body)
 
     if (!card) {
@@ -23,6 +22,7 @@ addCard=(req,res)=>{
             error: err
         })
     }
+    card.final_A
 
     card.save()
         .then((doc) => {
