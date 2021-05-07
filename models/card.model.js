@@ -21,7 +21,6 @@ const Card= new Schema({
     },
     final_Amount:{
         type:Number,
-        default:amount-250,
     }
 
 })

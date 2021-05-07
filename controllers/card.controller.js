@@ -57,5 +57,5 @@ getCards=(req,res)=>{
 
 module.exports={
     getCards,
-    addcard
+    addCard
 }

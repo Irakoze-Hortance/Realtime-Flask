@@ -2,7 +2,7 @@ const express=require('express')
 const cardController=require('../controllers/card.controller')
 const router=express.Router()
 
-router.post('/add',cardController.addcard)
+router.post('/add',cardController.addCard)
 router.get('/all',cardController.getCards)
 
 module.exports=router
