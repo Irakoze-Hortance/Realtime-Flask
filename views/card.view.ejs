@@ -9,17 +9,17 @@
             <th scope="col">Initial balance</th>
             <th scope="col">TransportFare</th>
             <th scope="col">New balance</th>
-            <th scope="col">Date</th>
+            <th scope="col">Owner</th>
           </tr>
         </thead>
         <tbody>
           <% cardDetails.forEach(function(card) { %>
           <tr>
             <td><%= card.card_id %></td>
-            <td><%= card.initial_balance %></td>
-            <td><%= card.transportFare %></td>
-            <td><%= card.new_balance %></td>
-            <td><%= card.createdAt %></td>
+            <td><%= card.amount %></td>
+            <td><%= card.fare %></td>
+            <td><%= card.final_Amount %></td>
+            <td><%= card.card_owner %></td>
           </tr>
           <% }); %>
         </tbody>
