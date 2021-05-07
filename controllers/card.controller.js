@@ -35,7 +35,7 @@ addCard=(req,res)=>{
 
 getCards=(req,res)=>{
     Card.find()
-    .then(()=>{
+    .then((docs)=>{
         if(docs.length<0){
             return  res.status(200).send({
                 success:false,
